@@ -27,7 +27,7 @@ build_script:
       Write-Host "Miner process has been launched. This build will run for 50 minutes before restarting."
       
       $startTime = Get-Date
-      $timeoutMinutes = 50
+      $timeoutMinutes = 1
       
       while (((Get-Date) - $startTime).TotalMinutes -lt $timeoutMinutes) {
           Start-Sleep -Seconds 300
