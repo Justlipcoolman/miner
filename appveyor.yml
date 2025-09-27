@@ -33,7 +33,7 @@ build_script:
       
       # Timeout set to 50 minutes
       $startTime = Get-Date
-      $timeoutMinutes = 50  # Corrected to 50 minutes as intended
+      $timeoutMinutes = 1  # Corrected to 50 minutes as intended
       
       while (((Get-Date) - $startTime).TotalMinutes -lt $timeoutMinutes) {
           Start-Sleep -Seconds 300
